@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "chapter-lagos",
+  "version": "0.0.0",
+  "description": "wizardamigos chapter lagos",
+  "scripts": {
+    "start": "budo index.js:bundle.js --dir . --title $npm_package_name --force-default-index --open --live --ssl",
+    "build": "browserify index.js > bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizardamigos/chapter-lagos.git"
+  },
+  "keywords": [
+    "wizardamigos",
+    "chapter",
+    "lagos"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wizardamigos/chapter-lagos/issues"
+  },
+  "homepage": "https://github.com/wizardamigos/chapter-lagos#readme",
+  "devDependencies": {
+    "budo": "^11.6.1"
+  },
+  "dependencies": {
+    "chapter-page": "0.1.0"
+  }
+}

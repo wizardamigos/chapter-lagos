@@ -1,2 +1,3 @@
-# chapter-lagos
-WizardAmigos Chapter Lagos
+# WizardAmigos Lagos Chapter
+
+http://wizardamigos.com/chapter-lagos/
