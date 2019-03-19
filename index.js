@@ -45,7 +45,7 @@ const url = 'https://cors-anywhere.herokuapp.com/' + meetup_api
 
 document.body.innerHTML = `<h1> Loading data - please wait ... </h1>`
 try {
-  var { place, time, event } = JSON.parse(localStorage.lastEvent)
+  var { place, time, event } = JSON.parse(localStorage[`${location.href}#lastEvent`])
   var old = new Date(time)
   var now = new Date()
   var timeDiff = now.getTime() - old.getTime()
@@ -69,7 +69,7 @@ try {
         break
       }
     }
-    localStorage.lastEvent = JSON.stringify({ place, event, time })
+    localStorage[`${location.href}#lastEvent`] = JSON.stringify({ place, event, time })
     data.place = place
     data.time = time
     data.event = event
